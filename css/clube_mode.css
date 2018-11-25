@@ -1,0 +1,147 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    width: 80vw;
+    min-width: 500px;
+}
+
+header {
+    position: relative;
+    background-image: url("../img/main.PNG");
+    background-size:cover;
+    width: 80vw;
+    height: 50vh;
+ }
+
+ .header__title {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     text-align: center;
+     background-color: rgba(0, 0, 0, 0.75);
+ }
+
+ .header__title h1 {
+     color: yellow;
+     padding: 0;
+     margin: 0;
+     text-transform: uppercase;
+     
+ }
+ .header__title h3 {
+     color: white;
+     padding: 0;
+     margin: 0;
+ }
+
+ .sticker {
+    background-color: green;
+    padding-top: 2em;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8em;
+    height: 8em;
+    text-align: center;
+    border-radius: 50%;
+    transform: rotate(10deg);
+    transition: all ease-in-out 3s; 
+    
+ }
+
+ @media(max-width: 500px ) {
+    .sticker {
+        position: fixed;
+        top:0;
+        right:0;
+        transform: scale(0.7, 0.7)  rotate(10deg);
+    }
+ }
+
+ .main-title {
+     background-color: yellow;
+     height: 40vh;
+     width: 80vw;
+     margin: 0;
+     text-align: center;
+     font-size: 1.3rem;
+     font-weight: 900;
+     
+     padding: 0.5em;
+ }
+
+main {
+    position: relative;
+}
+
+ .contents {
+    position: absolute;
+    top:2em;
+    height: 50vh;
+    width: 70vw; 
+    background-color: red;
+    padding: 1em;
+    margin-left: 2.5em;
+    display: flex;
+   
+ }
+
+ 
+
+ .printing {
+     background-color: green;
+     display: flex;
+     flex-direction: column;
+     justify-content:  space-evenly;
+     width: 15vw;
+ }
+
+ .printing div {
+     padding: 0 0.3em;
+ }
+
+ .printing div:first-child {
+     color:white;
+ }
+
+ .printing div span {
+    color:yellow;
+    text-shadow: 2px 2px black;
+ }
+
+ .printing div:nth-child(2) {
+    color:black;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+
+.card {
+    background-color: white;
+    margin: 0.7em;
+}
+
+.card img {
+    float: left;
+    margin: 0.7em;
+}
+
+
+.row-1 {
+    display: flex;
+    background-color: pink;
+}
+
+.row-2 {
+    display: flex;
+    background-color: aqua;
+}
